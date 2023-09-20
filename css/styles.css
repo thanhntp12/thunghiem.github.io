@@ -1,0 +1,267 @@
+body {
+  font-family: arial, sans-serif;
+
+  margin: 40px;
+  padding: 0;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+
+.info {
+  margin: 40px; /* Tạo khoảng cách 40px xung quanh phần tử */
+  padding: 0; /* Loại bỏ khoảng trắng bên trong phần tử */
+  font-size: 18px; /* Đặt kích thước chữ là 18px */
+  line-height: 1.5; /* Đặt độ cao dòng của văn bản là 1.5 lần kích thước của chữ */
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 0px; /* Loại bỏ khoảng trắng phía dưới phần tử */
+}
+
+.detail {
+  display: flex; /* Thiết lập thành container sử dụng Flexbox layout */
+  margin-bottom: 10px;
+}
+
+.label {
+  flex: 1; /* Thiết lập tỷ lệ flex là 1, để phần tử tự co giãn dựa trên tỷ lệ này */
+  font-weight: bold; /* Đặt độ đậm cho phần tử */
+}
+
+.value {
+  flex: 5; /* Thiết lập tỷ lệ flex là 5, để phần tử tự co giãn dựa trên tỷ lệ này */
+}
+img {
+  width: 113px;
+  height: 135px;
+  position: absolute; /* Đặt phần tử vị trí tuyệt đối */
+  right: 40px;
+  top: 130px;
+}
+/* Tạo kiểu dáng cho các phần tử có lớp 'section-title' */
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  margin: 40px 0;
+}
+/*Tạo kiểu dáng cho các phần tử 'p' bên trong phần tử có id 'target' */
+#target p {
+  font-size: 17px;
+  padding-top: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.container0 {
+  font-size: 18px;
+  position: relative;
+}
+.hocvan {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(156, 151, 151, 0.579);
+}
+
+/* Tạo một đường kết nối ngang giữa các phần tử '.hocvan' */
+.container0::before {
+  content: ""; /* Tạo một phần tử trống */
+  position: absolute;
+  width: 1px;
+  background-color: black;
+  top: -15px;
+  bottom: 40px;
+  left: -14px;
+}
+.hocvan {
+  position: relative;
+  background-color: inherit;
+}
+/* Tạo một hình tròn nhỏ để kết nối các phần tử '.hocvan' */
+.hocvan::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: -18px;
+  background-color: black;
+  border: 1px solid black;
+  top: 5px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info2,
+.info3 {
+  margin-left: 150px;
+}
+.school,
+.school2 {
+  margin-top: 5px;
+}
+
+.inline-div {
+  font-size: 18px;
+  display: flex; /* Hiển thị cùng hàng ngang */
+  padding-bottom: 10px;
+  align-items: baseline; /* Để các nội dung có cùng độ cao dựa trên nội dung lớn nhất */
+  border-bottom: 1px solid rgba(156, 151, 151, 0.579);
+  margin-bottom: 20px;
+}
+/* Tạo đường kết nối ngang giữa các phần tử có lớp '.kinhnghiem' */
+.kinhnghiem {
+  position: relative;
+}
+.kinhnghiem::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: black;
+  top: -15px;
+  bottom: 40px;
+  left: -14px;
+}
+/* Tạo hình tròn nhỏ để kết nối các phần tử có lớp '.timeline' */
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: -18px;
+  background-color: black;
+  border: 1px solid black;
+  top: 5px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.date4 {
+  width: 200px;
+  height: 21px;
+  margin-right: 130px;
+}
+
+.job-details p {
+  margin: 0; /* Loại bỏ khoảng cách lề mặc định */
+  margin-bottom: 10px;
+}
+
+.job-details ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+}
+
+.job-details li {
+  margin-top: 5px;
+}
+.date5 {
+  width: 179px;
+  height: 21px;
+  margin-right: 110px;
+}
+.interest {
+  font-size: 18px;
+}
+#hobby h2 {
+  margin-bottom: 10px;
+}
+.quanly {
+  font-size: 18px;
+}
+.container {
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(165, 165, 165, 0.348);
+}
+
+.div-1,
+.div-2,
+.div-3,
+.div-4 {
+  margin-right: 150px;
+}
+.container1 {
+  font-size: 18px;
+}
+
+.row1 {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(165, 165, 165, 0.348);
+}
+
+.div1,
+.div3,
+.div5,
+.div7 {
+  margin-right: 150px;
+  font-weight: bold;
+}
+.div2,
+.div4,
+.div6,
+.div8 {
+  margin-left: 50px;
+}
+.div6 {
+  margin-left: 66px;
+}
+.div8 {
+  margin-left: 38px;
+}
+.container2 {
+  font-size: 18px;
+}
+.row2 {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(165, 165, 165, 0.348);
+}
+.div21,
+.div23 {
+  margin-right: 150px;
+}
+.div22,
+.div24 {
+  margin-left: 100px;
+}
